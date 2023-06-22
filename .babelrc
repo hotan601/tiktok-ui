@@ -1,0 +1,16 @@
+// babel-plugin-module-resolver: custom link import
+//use this
+//import MyUtilFn from 'util/MyUtilFn';
+//Instead of that:
+//import MyUtilFn from '../../../../utils/MyUtilFn';
+
+
+{
+    "plugins": [
+      ["module-resolver", {
+        "alias": {
+          "~": "./src"
+        }
+      }]
+    ]
+  }
