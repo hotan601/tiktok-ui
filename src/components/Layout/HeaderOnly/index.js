@@ -1,6 +1,6 @@
 
 import Header from '~/components/Layout/components/Header';
-import Sidebar from './Sidebar';
+
 
 function DefaultLayout({ children }) {
     return ( 
@@ -8,7 +8,6 @@ function DefaultLayout({ children }) {
             <Header />
 
             <div className="container">
-                <Sidebar />
                 <div className="content">{children}</div>
             </div>
 
